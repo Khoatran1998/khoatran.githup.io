@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="asscest/basic.css" />
+    <link rel="stylesheet" href="asscest/grid.css" />
+    <link rel="stylesheet" href="asscest/css/style.css" />
+    <link rel="stylesheet" href="asscest/reponnsive.css" />
+    <link rel="stylesheet" href="asscest/font-icon/css/all.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class=" app">
+      <header>
+        <div id=""></div>
+        <div class=" grid header">
+          <div class="grid wide header__container">
+            <div class="col l-3">
+              <ul class="header__container-list">
+                <li class="header__container-item">For You</li>
+                <li class="header__container-item">Drama</li>
+                <li class="header__container-item">
+                  More
+                  <ul class="header__container-item-sub">
+                    <li><a href="">K-Drama</a></li>
+                    <li><a href="">Movie</a></li>
+                    <li><a href="">Anime</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="grid wide header__width-search">
+            <div class="row  header__containe">
+              <div class="col l-12 ">
+
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Tìm kiếm của bạn"
+                />
+                <div class="header__search">
+                  <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="header__history-list ">
+                  <li class="header__history-item">
+                    <i class="header__history-icon fa-regular fa-clock"></i>
+                    Hitstory
+  
+                    <div class="header__history-container">
+                      <div class="header__history-container--item">
+                        <img
+                          src="asscest/img/history/1.jpeg"
+                          alt=""
+                          class="header__history-img"
+                        />
+                        <div class="header__history-body">
+                          <h3 class="header__history-heading">
+                            Suspicios Partenr
+                          </h3>
+                          <span class="header__history-desc"
+                            >Watch to Epsicode</span
+                          >
+                        </div>
+                      </div>
+                      <div class="header__history-container--item">
+                        <img
+                          src="data:image/jpeg;base64,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"
+                          alt=""
+                          class="header__history-img"
+                        />
+                        <div class="header__history-body">
+                          <h3 class="header__history-heading">
+                            Suspicios Partenr
+                          </h3>
+                          <span class="header__history-desc"
+                            >Watch to Epsicode</span
+                          >
+                        </div>
+                      </div>
+                      <div class="header__history-container--item">
+                        <img
+                          src="https://cdn.baogiaothong.vn/files/ngoc.le/2016/03/13/phim-hau-due-cua-mat-troi-co-bao-nhieu-tap-va-noi-dung-phim-hau-due-cua-mat-troi-11-1650.jpg"
+                          alt=""
+                          class="header__history-img"
+                        />
+                        <div class="header__history-body">
+                          <h3 class="header__history-heading">
+                            Suspicios Partenr
+                          </h3>
+                          <span class="header__history-desc"
+                            >Watch to Epsicode</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__history-item-nav">
+                    <i class="header__history-icon fa-solid fa-globe"></i>
+                    Languae
+                    <ul class="header__history-nav">
+                      <li><a href="">English</a></li>
+                      <li><a href="">Tiếng Việt</a></li>
+                      <li><a href="">中国话</a></li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-user">
+                    <i class="header__history-icon fa-solid fa-user"></i>
+                    MINE
+                    <div class="header__sub-nav">
+                      <span class="header__nav-desc"
+                        >Đăng nhập để xem nội dung mới nhất</span
+                      >
+                      <button class="header__sub-btn">Đăng Nhập</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- silder -->
+        <div class="grid  header__slider">
+          <div class="row header__slider-wrapper">
+           <div class="col l-12  ">
+            <img
+            src="https://static.vieon.vn/vieplay-image/thumbnail_v4/2021/04/12/rj3fke7m_1920x1080-matdanhk2.jpg"
+            alt=""
+            class="header__slider-show"
+          />
+          <img
+            src="https://bloganchoi.com/wp-content/uploads/2020/04/quan-vuong-bat-diet-3.jpg"
+            alt=""
+            class="header__slider-show"
+          />
+            <img
+              src="https://cdn.baogiaothong.vn/files/ngoc.le/2016/03/13/phim-hau-due-cua-mat-troi-co-bao-nhieu-tap-va-noi-dung-phim-hau-due-cua-mat-troi-11-1650.jpg"
+              alt=""
+              class="header__slider-show"
+            />
+
+              <div class="row header__sub-body">
+                <div class="col l-6 m-6 c-6">
+                  <h2 class="header__slider-heading">Descendants of The Sun</h2>
+                  <p class="header__slider-desc">
+                    Description: Descendants of the Sun tells a love story
+                    between a special troops officer from United Nations
+                    Peacekeeping Force, Yoo Si-Jin (played by Song Joong-Ki),
+                    and a surgeon, Kang Mu-Yeon (play by Song Hye-Kyo). They
+                    fall in love in the first sight, however, no progress has
+                    been made because of ...
+                  </p>
+                  <button class="header__slider-btn btn">
+                    <i class="header__btn-icon fa-solid fa-play"></i>
+                    Play
+                  </button>
+                  <button class="header__slider-sub-btn btn-color">
+                    <i
+                      class="header__btn-icon fa-sharp fa-solid fa-arrow-up-from-bracket"
+                    ></i>
+                    Share
+                  </button>
+                  <button class="header__slider-sub-btn btn-color">
+                    <i class="header__btn-icon fa-solid fa-download"></i>
+                    App
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- silder content -->
+        </div>
+
+        <!-- header menu -->
+
+
+
+      
+
+        <div id="header__navbar" class="header__navbar">
+          <i class="header__navbar-icon fa-solid fa-bars"></i>
+        </div>
+
+      </header>
+      <!-- app contentr -->
+      <div class="grid wide app__contener">
+    
+        
+
+        <div class=" main">
+          <div class=" row main__contaitent tab-pane active">
+            <div class="col  ">
+              <div class=" row  main__contaitent-list">
+
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a title="#" href="https://www.iq.com/album/mua-he-cua-huong-bac-ha-2021-1xrpjpef8dp?lang=vi_vn" on lick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20210709/47/4d/a_100465066_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+
+                      <div class="main__item-body ">
+                        <img src="https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2021/08/mua-he-cua-huong-bac-ha-lam-nam-nhat-dong-tich-tran-hac-nhat-nghe-kha-han-2-1-696x399.jpg?fit=700%2C20000&quality=95&ssl=1" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>                       
+                        <h4 class="main__item-name">Summer Again</h4>
+                        <span class="main__item-desc">
+                          Tong Xi, a ballet dancer, is forced to return
+                        </span>
+                      </div>
+                    </a>
+                  </div>                  
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a  href="https://www.iq.com/album/kinnporsche-the-series-2022-1vg8kmesarl?lang=vi_vn" onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20220617/60/1b/a_100484597_m_601_en_m5_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://images2.thanhnien.vn/Uploaded/trucdl/2022_05_16/phimkinnporscheboyslovethailan9-118.png" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        
+                        <h4 class="main__item-name">
+                          KinnPorsche The Series La Forte
+                        </h4>
+                        <span class="main__item-desc">
+                          KinnPorsche The Series"
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/day-dau-gai-between-us-2022-qi1be5eint?lang=vi_vn" onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20220221/12/b0/a_100496241_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://pic6.iqiyipic.com/image/20220221/12/b0/a_100496241_m_601_zh-CN_m1_720_405.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Between Us</h4>
+                        <span class="main__item-desc">
+                          Team always has a sleeping issue before</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/thuyet-minh-tuoc-tich-lam-gioi-thien-ha-2019-1gka7kx81fx?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20220822/3f/e7/a_100516008_m_601_zh-CN_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPzVNxZIsqC-5lX995yKokLE0g5oxCW9T_lABBvBZ4x9TvXaUjG4APP5jV79NNj4pSFE&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+
+                        <h4 class="main__item-name">L.O.R.D. Critical</h4>
+                        <span class="main__item-desc">
+                          During the 15th century B.C., the descendants</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/nhung-nguoi-thua-ke-2013-19rrhzp535?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20210607/dd/dc/a_100342184_m_601_en_m5_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://trungtamtienghan.edu.vn/uploads/blog/the-heirs-the-inheritors-2013_44701381460349.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Inheritors</h4>
+                        <span class="main__item-desc">
+                          “Inheritors” is written by Kim Eun-sook, a writer
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/bi-mat-noi-goc-toi-2021-1auz0cjgkyt?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20210901/c4/a1/a_100471443_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://static2.vieon.vn/vieplay-image/thumbnail_v4/2021/08/09/7vhfpm09_1920x1080-bimatnoigoctoi_296_168.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+
+                        <h4 class="main__item-name">Our Secrets</h4>
+                        <span class="main__item-desc">
+                          "Our Secret" (2021) - A story of a talented</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class=" row main__contaitent-list">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/khoa-hoc-ve-tinh-yeu-2023-20lcyjk932p?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20230320/3d/c3/a_100521384_m_601_en_m2_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://o.rada.vn/data/image/2023/03/22/khoa-hoc-ve-tinh-yeu-700.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          The Science of Falling in Love s
+                        </h4>
+                        <span class="main__item-desc">
+                          At the prestigious Southeast</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/long-tieng-cua-hang-tien-loi-saet-byul-2020-x6w7p4d6zp?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20210719/4c/1c/a_100404929_m_601_en_m9_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://2llana.files.wordpress.com/2020/08/img_6687.jpg?w=816" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Backstreet Rookie</h4>
+                        <span class="main__item-desc">
+                          iQIYI original Korean drama, based on the webtoon
+                          Convenience
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/hau-due-mat-troi-2016-19rrhyq7ph?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic7.iqiyipic.com/image/20210713/0f/f6/a_100345372_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://static.tuoitre.vn/tto/i/s626/2016/02/25/song-joong-ki-song-hye-kyo-1456413799.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Descendants of The Sun</h4>
+                        <span class="main__item-desc">
+                          Descendants of the Sun tells a love story between
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/gia-tuong-do-thi-2017-dhknapm094?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20200902/e2/ad/v_151257009_m_601_en_m7_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://thegioidienanh.vn/stores/news_dataimages/hoangtuan/022017/05/14/4443_Fabricated_city_seY_phaYt_haYnh_vaYo_ngaYy_9_2_saYYp_toYYi_.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/cuoc-goi-bi-an-2021-2da236jnevk?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20211220/81/eb/v_164061059_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://static1.dienanh.net/upload/202108/3d8fb047-52cf-45e2-99f3-b1d08faa45f5.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Hard Hit</h4>
+                        <span class="main__item-desc">
+                          Bank manager Seong-gyu (played by Jo Woo-jin)
+                          2023</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/ban-cung-phong-cua-toi-la-gumiho-2021-1yv9k230lmd?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic7.iqiyipic.com/image/20210525/d5/1c/a_100447377_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iGAkCWhTyV0NNJMm9oMFexApmlXAh6ZPPQ&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+
+                        <h4 class="main__item-name">My Roommate is a Gumiho</h4>
+                        <span class="main__item-desc">
+                          "My Roommate Is A Gumiho" is a romantic
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class=" row main__contaitent-list">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/lam-trai-tim-em-mim-cuoi-2021-zsdwqpt655?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20210219/01/eb/a_100446171_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://www.elle.vn/wp-content/uploads/2021/02/25/426047/lam-trai-tim-em-mim-cuoi-o-lop-hoc.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Làm Trái Tim Em Mỉm Cười
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Câu truyện về ba cặp đôi trẻ cùng nhau...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/yeu-nhau-di-thuc-mong-quan-2020-1thf1hg3slh?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20200924/4f/2f/a_100426548_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://gamehot24h.com/wp-content/uploads/2020/11/3262_1605406465.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Yêu Nhau Đi, Thực Mộng Quân
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bộ phim kể về câu chuyện của cô gái thiên
+                          tà...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/mot-doi-mot-kiep-nhat-sinh-nhat-the-2021-204eogfk5ol?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20210910/56/0f/a_100476565_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2021/9/9/951769/Fa27e390-7Ed4-4Ee5-8.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Một Đời Một Kiếp (Nhất Sinh Nhất Thế)
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Một Đời Một Kiếp Nhất Sinh Nhất Thế...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/even-sun-2022-1nm1hp1wvup?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20220629/4a/63/a_100509618_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://phimdammy.com/wp-content/uploads/2022/07/FVRKC0KXoAAv2cZ.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Even Sun</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Even Sun (Tôi Chính Là Cậu Arthid) kể về câu
+                          chuyện xoay quanh Sun
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/khuynh-the-cam-lan-coc-vu-lai-2020-182my4avg2t?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20220926/a6/80/a_100518703_m_601_zh-CN_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://ss-images.saostar.vn/wp700/pc/1606900793667/b00LIdi(1).jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Khuynh Thế Cẩm Lân Cốc Vũ Lai
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Ninh Tu Duệ - Nhị điện hạ của Long tộc lén
+                          chạy lên bờ vui chơ...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/chung-cuc-but-ky-2020-f7ut0rw7s9?lang=vi_vn"on class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20221012/f7/13/a_100519778_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://pic5.iqiyipic.com/image/20201210/72/83/a_100437691_m_601_vi_1013_638.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Chung Cực Bút Ký</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Vốn dĩ Ngô Tà chỉ thấy hứng thú với kinh
+                          nghiệm thực tế của chú ba....
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+          </div>
+
+          <div class=".row main__contaitent tab-pane">
+            <div class="col l-12  ">
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/chuyen-tau-chuot-dien-2021-13dfa7djeio?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20210108/d7/62/v_156032318_m_601_vi_m3_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+
+                      <div class="main__item-body ">
+                        <img src="https://i.ytimg.com/vi/wkCZ2Gec6vY/maxresdefault.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Chuyến Tàu Chuột Điên</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Tô Chính Hoài và gia đình lên tàu đến thành phố, tàu còn chưa chạy đã bị đàn chuột tấn công. Con trai của Tô Chính Hoài bị cắn rồi hôn mê...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/truyen-thuyet-ve-ac-nhan-2019-20byicut24s?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20210515/bb/19/v_151172615_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pics.filmaffinity.com/The_Gangster_the_Cop_the_Devil-679655414-large.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Truyền Thuyết Về Ác Nhân
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Thủ lĩnh băng đảng Zeus khét tiếng Jang Dongsu bị ám sát bất ngờ trong một đêm mưa. Nhằm trả thù và lấy lại danh tiếng, Jang Dong-su đã hợp tác...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/lam-sac-sinh-tu-luyen-2019-flg8snys74?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20201126/d6/16/v_154925601_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic5.iqiyipic.com/image/20201121/2e/3a/v_154971192_m_601_zh-CN_m1_284_160.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Lam Sắc Sinh Tử Luyến</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Ân Hi (do Triệu Lộ Tư thủ vai) và Hân Ái (Mạnh Mỹ Kỳ thủ vai) lúc sinh ra vô tình bị anh trai Tuấn Hi (Tiêu Duệ thủ vai)...
+                          </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/train-to-busan-2-ban-dao-peninsula-2020-mzhth15jkg?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic9.iqiyipic.com/image/20210211/d6/96/v_153842445_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://vtv1.mediacdn.vn/thumb_w/640/2020/7/14/train-to-busan-peninsula2-yhumb-e1593079722788-15947012411541295275896.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Train To Busan 2: Bán Đảo Peninsula</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Ở phần trước, sau khi chuyến tàu đi tới Busan, virut zombie đã bùng nổ khắp nơi trong cả nước, Hàn Quốc biến thành vùng đất chết. Số ít...</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/hoa-moc-lan-giai-cuu-dai-mac-2020-1d39j9ta5ik?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20200825/81/98/v_151745314_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://znews-photo.zingcdn.me/w660/Uploaded/aobovhp/2020_09_05/Mulan_202x80_Banner.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Hoa Mộc Lan: Giải Cứu Đại Mạc</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Nữ chiến thần tung hoành thành Vân Trung! Hoa Mộc Lan lập lời thề sinh tử, to gan dùng tử tù Mộ Dung Địch giải cứu công chúa! Hoa Mộc Lan...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/bay-ngay-2007-bmk341bglo?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20210603/0d/f7/v_159396427_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://img-zlr1.tv360.vn/image1/2021/05/14/01/a4ca9d71/a4ca9d71-965a-4825-9d91-c5bff479795f_640_360.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Bảy Ngày</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Nữ luật sư Yoo Ji Yeon (do Kim Yun Jin đóng) là một người có nghiệp vụ xuất sắc và có thành tích bất bại trên tòa án. Trong dòng người hỗn loạn tại đại hội thể thao của trường,...
+                          </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+              </div>
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/nhan-doi-tinh-yeu-2021-12i5zgbebgg?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic8.iqiyipic.com/image/20210413/01/0f/v_157865928_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://static1.dienanh.net/upload/202104/df84fd73-579c-432a-9244-f270a5999ca7.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Nhân Đôi Tình Yêu
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bộ phim kể về tình yêu, tình bạn cũng những câu chuyện đời thường của cô gái tên Lee Hyun Ji với ước mơ trở thành phát thanh viên (Bae Joo Hyun thủ vai)</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/than-tham-tron-hoc-2022-u73xit1nbc?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20230110/60/92/v_170690982_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://dataqq.net/film/22536/big.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Thần Thám Trốn Học
+                          </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Một vụ giết người kỳ lạ xảy ra ở trường trung học St. Martin. Hà Mạn Quân, con trai của Bộ trưởng Bộ Quân sự và Chính trị đã chết một cách kỳ lạ. Viên cảnh sát Trần Hổ nhận 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/chuyen-minh-ruc-ro-2023-14u48lh0jrl?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20230331/7d/af/a_100513048_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.rada.vn/data/image/2023/03/31/chuyen-minh-ruc-ro-700.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Chuyển Mình Rực Rỡ</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Tô Phi "thông minh" và An Ninh "tàn nhẫn" có cảm tình với nhau. Họ cùng nhau đương đầu với nỗi đau gia đình Tô Phi tan vỡ
+
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/sat-thu-nhan-tao-phan-2-mau-vat-con-lai-2022-1frz1a7qjt4?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230207/02/cc/v_170690899_m_601_en_m2_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://congluan-cdn.congluan.vn/files/content/2022/05/25/%E2%80%98sat-thu-nhan-tao-phan-2%E2%80%99-van-con-qua-nhieu-cau-chuyen-de-ke-225519440.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">  Sát Thủ Nhân Tạo Phần 2: Mẫu Vật Còn Lại</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Phụ đề tiếng Việt sẽ được cập nhật ngày 10/1 Sát Thủ Nhân Tạo Phần 2: Mẫu Vật Còn Lại xoay quanh nhân vật Gu Ja Yoon (do Kim Da Mi đảm nhận) 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/remember-2022-1jurmzihl9s?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic1.iqiyipic.com/image/20230105/6a/5b/v_169791715_m_601_vi_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://cdn.idntimes.com/content-images/community/2022/10/308384420-498908572081243-2420038857691184607-n-e887fafcd83fb6715e3c7f167f5d6a9a-bb21a4d4b663bf5142277e049ea1d9fb_600x400.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">REMEMBER</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Han Pil-soo là một bệnh nhân u não giai đoạn cuối mắc bệnh Alzheimer. Trong thời kỳ Nhật Bản chiếm đóng Hàn Quốc, ông đã mất tất cả các thành viên trong gia đình...
+ </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/thanh-guom-diet-quy-tham-nhap-ky-vien-tran-2021-1giyvxx32v8?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20230403/8d/58/v_172103049_m_601_vi_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://phimhey.com/storage/images/thanh-guom-diet-quy-phan-tham-nhap-ky-vien-tran/thanh-guom-diet-quy-phan-tham-nhap-ky-vien-tran-poster.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Thanh Gươm Diệt Quỷ</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Thanh Gươm Diệt Quỷ: Thâm Nhập Kỹ Viện Trấn (Demon Slayer: Entertainment District Infiltration Arc 2023) xoay quanh chuyến viếng thăm dinh thự Rengoku, 
+
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/lieu-trai-hoa-bich-2023-1jtwbu891os?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230331/08/1e/v_171346096_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.ytimg.com/vi/_x3arLG7f7Q/maxresdefault.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Liêu Trai Họa Bích
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Thông qua những bức bích họa trong ngôi đền cổ, Chu Tiếu Liêm họa sĩ số một ở Giang Nam, bước vào thế giới tranh bích họa 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/hung-thu-vo-hinh-2023-1bon67kbhqw?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic1.iqiyipic.com/image/20230324/3b/c4/v_171275179_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.vietgiaitri.com/2022/12/8/hoi-hop-cho-doi-loi-thu-toi-cua-so-ji-sub-trong-hung-thu-vo-hinh-ec54d-6784015_default.webp" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Hung Thủ Vô Hình
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Hung Thủ Vô Hình (Confession) kể về vụ án mạng trong phòng kín, không có dấu hiệu đột nhập cũng không có sự xuất hiện của người thứ ba. Khi nghi phạm duy nhất,...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/huyen-thuat-tien-sinh-2023-1l3xhdi0lvw?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20230310/71/ae/v_171201702_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.ytimg.com/vi/o2zH5EhICCw/mqdefault.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Huyễn Thuật Tiên Sinh
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Huyễn Thuật Môn bắt nguồn từ triều đại nhà Thương và được chia thành năm trường phái: kim,mộc, thủy, hỏa và thổ. Vào những năm đầu của Trung Hoa Dân Quốc,...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tuong-quan-nac-2020-1zvs3hksa2s?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic8.iqiyipic.com/image/20201224/65/6b/v_155578224_m_601_vi_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://pic8.iqiyipic.com/image/20201224/65/6b/v_155578224_m_601_vi_m1_720_405.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Tướng Quân Nặc</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Thích khách tân nương chọc ghẹo tướng quân đẹp trai! Hách Liên nhận được chỉ thị gả cho tướng quân Mộ Dung chỉ để lấy trộm một thứ quan trọng nhất của tướng quân...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tho-ren-kiem-vi-dai-2021-1jdupvu2y7s?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20210915/62/1f/v_116425839_m_601_m11_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfyEdB6462frRg3QpQZVd3VQbq1E69VYbtSGWRUdNuT2hKJ-sGDWTSF4EkHjNCEegCIU&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Thợ Rèn Kiếm Vĩ Đại
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Giới thiệu vắn tắt: Mối họa diệt môn đến từ gian thần triều đình Triệu Hàm đã ập tới gia đình thợ rèn kiếm số một thiên hạ Mông Dã Tử vì ông rèn ra 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/truong-tam-phong-2-thai-cuc-thien-su-2020-19rybxx8hg?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20201014/dd/db/v_148251562_m_601_vi_m3_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://images.fptplay.net/media/21_02_2022/taichihero_2020_cn_bghd21-02-2022_01g55-07.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Trương Tam Phong 2 Thái Cực Thiên Sư</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Nhất đại tông sư Trương Tam Phong tái xuất giang hồ~ xem tác phẩm võ hiệp hoành tráng, trận huyết chiến của Trương Tam Phong và Tu La!
+
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=".row main__contaitent tab-pane">
+            <div class="col l-12  ">
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/oppa-giao-su-cua-em-2023-15b6jy4cfph?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230303/e2/13/a_100520870_m_601_zh-CN_m1_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+
+                      <div class="main__item-body ">
+                        <img src="https://phimhey.com/storage/images/oppa-giao-su-cua-em/oppa-giao-su-cua-em-poster.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Oppa! Giáo Sư Của Em</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Jung-Hyun Hwang là giảng viên Trường Quản lý Du lịch tại một trường đại học địa phương ở thủ đô.
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/ainhai-2023-1bxga4hi6hh?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20230325/ba/e9/a_100531856_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://ghienphim3.net/uploads/ai-nhai_banner_.jpg?v=1679915810" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          AiNhai
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Tập đặc biệt của Ai Long Nhai, phát sóng độc quyền trên iQIYI
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/hom-nay-phai-co-len-2023-251wzouq5mh?lang=vi_vn"onclickclass="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20230220/b1/81/a_100521378_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://t.ex-cdn.com/giadinhmoi.vn/resize/600x315/files/content/2023/02/21/hom-nay-phai-co-len-00-1137.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Hôm Nay Phải Cố Lên</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bộ phận kế hoạch thứ ba của Tập đoàn Điện tử Cao Phát là bộ phận chịu trách nhiệm đổi mới,</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tuyet-phoi-to-tam-duong-2023-2aef2fzzzbx?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20230302/be/c2/a_100519821_m_601_vi_m1_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic3.iqiyipic.com/image/20230302/be/c2/a_100519821_m_601_vi_m1_1080_608.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Tuyệt Phối Tô Tâm Đường</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Tuyệt Phối Tô Tâm Đường sắp lên sóng tại iQIYI. Phim được chuyển thể từ bộ truyện tranh "Tôi Bị Tổng Tài Anti Rồi" </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/manh-thu-dong-bac-2023-1errz8u9zb4?lang=vi_vn" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic1.iqiyipic.com/image/20230403/b8/64/v_171345043_m_601_en_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://img.phimmoichillb.net/images/info/northeast-beast.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Mãnh Thú Đông Bắc</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bộ phim kể về câu chuyện của Tôn Đắc Hữu, giám đốc cũ của vườn thú, người khăng khăng vận hành vườn 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/cutie-pie-2-you-2023-1pfc5cxbk95?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic7.iqiyipic.com/image/20230210/31/25/a_100528184_m_601_en_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i0.wp.com/bloganchoi.com/wp-content/uploads/2022/02/review-cutie-pie-series-2022-phim-boylove-thai-1-1.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Cutie Pie 2 You</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Kuea vừa tốt nghiệp và Lian hào hứng bắt đầu lên kế hoạch cho đám cưới của họ, nhưng giấc mơ của Kuea vẫn còn ở phía trước</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class="row  main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/bao-ve-thanh-chu-dai-nhan-cua-ta-2023-1vbsba8e2vh?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230106/ad/ca/a_100522329_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.ytimg.com/vi/QE-RZbbrxbg/maxresdefault.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Bảo Vệ Thành Chủ Đại Nhân Của Ta
+
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bảo Vệ Thành Chủ Đại Nhân Của Ta (My Uncanny Destiny) xoay quanh bối cảnh thời cổ đại,</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/quan-tra-herbal-tieng-quang-dong-2004-19rr7d7uh8?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic1.iqiyipic.com/image/20210916/17/0d/v_112392288_m_601_m7_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://mephimtv.cc/wp-content/uploads/2022/04/quan-tra-herbal-tieng-quang-dong-thumb.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Quán trà Herbal(Tiếng Quảng Đông)</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bản tính của Lâm Vỹ Châu rất vô tư phóng khoáng, ông bố già của cô đã qua đời lúc cô mới 12 tuổi,
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/vua-bip-2002-2002-19rr7rcq6k?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20220820/fb/d9/v_112848472_m_601_m7_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2D-Zk5zfweCYo0aeGNjbFcdiP3y_7FSvm59xzcjBrN3hVcucn" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Vua Bịp 2002</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: "“ Vua đen đủi” Lý Gia Thừa đi đâu cũng gặp đen đủi, nhờ sự giúp đỡ của Mã Đại Hưởng đại ca chợ 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/khi-dan-ong-bien-thanh-phu-nu-2002-19rr7ql0w8?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic8.iqiyipic.com/image/20220411/2d/07/v_112858197_m_601_zh-CN_m1_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLDWolFb_xl-2Qim1Uw3Xry7FdgBr8SGM6GwCyBaXhjDn65cHU1369EkqKdEpktBxT_g&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Khi đàn ông biến thành phụ nữ</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Một thợ làm tóc, một trưởng thôn và một bác sĩ thú y từng có bạn gái nhưng vẫn khăng khăng chơi
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/am-thanh-dieu-ky-2021-1h5fl4yhhht?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic5.iqiyipic.com/image/20211229/43/e4/a_100488815_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_J_RoyhSWyB1nbOhhCYincKIUnU5qIyodpCV1lPS_Kr8PziXODoBu-LBE5GeFFRmUTqk&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+
+                        <h4 class="main__item-name">Âm Thanh Diệu Kỳ</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Một bộ phim hài lãng mạn giả tưởng về một nhân viên bán thời gian ở cửa hàng tiện lợi đang tìm kiếm </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/ban-trai-phan-dien-cua-toi-mr-bad-2022-11co6fpv46d?lang=vi_vn"onclickclass="main__contaitent-item-link">
+                      <img
+                        src="https://pic6.iqiyipic.com/image/20220927/54/2b/a_100506293_m_601_vi_m3_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic6.iqiyipic.com/image/20220927/54/2b/a_100506293_m_601_vi_m3_1080_608.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Bạn Trai Phản Diện Của Tôi (Mr. BAD)
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: 【Chỉ tài khoản VIP có thể mua gói Express (Tập 17-24)】 "Bạn Trai Phản Diện Của Tôi" là bộ phim tình yêu hài hước
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class="row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/toi-va-anti-fan-ket-hon-2021-uiyps1eu41?lang=vi_vn"onclickclass="main__contaitent-item-link">
+                      <img
+                        src="https://pic1.iqiyipic.com/image/20210518/66/c8/a_100455301_m_601_vi_m2_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic1.iqiyipic.com/image/20210518/66/c8/a_100455301_m_601_vi_m2_260_360.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Tôi Và Anti-fan Kết Hôn
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Ngôi sao K-pop Hoo Joon và phóng viên tạp chí Lee Geun Young, cũng là anti-fan của anh, vô tình phải sống cùng nhau 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/khanh-khanh-nhat-thuong-tan-xuyen-nhat-thuong-2022-xre41bur79?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20221116/e4/d4/a_100517769_m_601_vi_m1_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://img.meta.com.vn/data/image/2022/11/18/lich-chieu-phim-khanh-khanh-nhat-thuong-3.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Khanh Khanh Nhật Thường 
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Khanh Khanh Nhật Thường (Tân Xuyên Nhật Thường, New Life Begins) kể về câu chuyện của các cô gái đến từ trời nam đất bắc
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/sao-bang-2022-s1wy456kzt?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20220422/f6/45/a_100498863_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://www.elle.vn/wp-content/uploads/2022/04/21/476209/poster-phim.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Sao Băng
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Bộ phim truyền hình Hàn Quốc "Sao Băng" được sản xuất bởi đạo diễn Lee Soo Hyun và biên kịch Choi Young Woo
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/cuong-phong-2023-11w57wepvyx?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic9.iqiyipic.com/image/20230202/82/fd/a_100513144_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic9.iqiyipic.com/image/20230202/82/fd/a_100513144_m_601_vi_260_360.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Cuồng Phong</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: An Hân (do Trương Dịch thủ vai), cảnh sát hình sự tuyến đầu ở thành phố Kinh Hải. Trong cuộc đấu tranh chống lại các thế lực tà ác
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tinh-yeu-va-am-muu-2021-z3oxsqmej1?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20211012/9b/20/a_100477685_m_601_vi_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://pic4.iqiyipic.com/image/20211012/9b/20/a_100477685_m_601_vi_260_360.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Tình Yêu Và Âm Mưu
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Tô Bắc dẫn con dễ thương trở về, gặp lại “chồng trước” Lộ Nam, điều tra chân tướng sau hàng loạt âm mưu 7 năm trước
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/meo-cuoi-ca-2023-1cmg22yqt61?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20230215/1a/6e/a_100516101_m_601_vi_m6_260_360.jpg"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://phimhey.com/storage/images/meo-cuoi-ca/meo-cuoi-ca-poster.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Mèo Cưỡi Cá</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Thi Hoa Hoa một cô gái vùng quê hoang dã, có tài võ nghệ, thông thạo “mười tám thế võ”, trên đường xuống núi rèn luyện 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=".row main__contaitent tab-pane">
+
+            <div class="col l-12  ">
+              <div class="row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tho-than-tap-su-2012-23fiz4weypd?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20220120/06/f5/a_100478489_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+
+                      <div class="main__item-body ">
+                        <img src="https://vnkings.com/wp-content/uploads/2020/07/tho-than-tap-su-1-185x278-1.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Thổ Thần Tập Sự</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Vì người cha đam mê cờ bạc, mắc phải một món nợ lớn mà rời nhà, Nanami phiêu bạt nơi đầu đường xó chợ
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/bat-dau-toa-sang-tu-hom-nay-2023-x7auaj6p29?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic9.iqiyipic.com/image/20230329/13/92/a_100531508_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://gocphim.net/wp-content/uploads/2023/04/BAT-DAU-TOA-SANG-TU-HOM-NAY.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Bắt Đầu Tỏa Sáng Từ Hôm Nay
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Sau khi giành chiến thắng trong cuộc thi ca hát, Tần Trạch được một công ty môi giới nổi tiếng trong ngành phát hiện...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/thang-tu-la-loi-noi-doi-cua-em-2014-2g6mip8tge9?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20211120/72/9a/a_100478541_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://vcdn-giaitri.vnecdn.net/2018/04/05/your-lie-in-april-4990-1522926390.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Tháng Tư Là Lời Nói Dối Của Em</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Mẹ của Arima Kousei muốn đào tạo chàng ấy thành một nghệ sĩ dương cầm nổi tiếng thế giới. Kousei không phụ lòng kỳ vọng của mẹ</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/thuong-lan-quyet-ban-hoat-hinh-2022-ffsxk2apr1?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20221223/96/1e/a_100510163_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://pic3.iqiyipic.com/image/20221223/96/1e/a_100510163_m_601_vi_260_360.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Thương Lan Quyết</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Đông Phương Thanh Thương người bị đàn áp hàng ngàn năm đã quay trở lại Tam giới, sau khi hồi sinh, </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/than-vo-thien-ton-2020-1b4lufwxd7h?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20210121/5f/15/a_100444857_m_601_zh-CN_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://lh3.googleusercontent.com/-GrX41Fym63c/YdjkkxeDDUI/AAAAAAAAAnw/0sQ499avBngPCYp_ft09FocC_J2S8qPVQCNcBGAsYHQ/w680/than-vo-thien-ton.webp" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">THẦN VÕ THIÊN TÔN</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Ta từ hư không mà tới, nhấc tay trời phải sập, lật tay hủy Hoàng tuyền. Ta là ma, là thần, là tiên, là người. Ta là Tiêu Thần, là vạn vật, cũng là chúa tể!
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/bay-vien-ngoc-rong-sieu-cap-2015-1hyuc6mul85?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20201225/d5/93/a_100432281_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://chungcuhn24h.net/wp-content/uploads/2016/05/dragon-ball-super-hinh-dai-dien-725x1024.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Bảy Viên Ngọc Rồng Siêu Cấp</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Giới thiệu: Sau khi kết thúc trận chiến khốc liệt với Majin Buu, trái đất trở lại hòa bình, Son Goku... </span
+                        >
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class="row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/naruto-2002-1evx2uy83ah?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic9.iqiyipic.com/image/20210812/10/4d/a_100464174_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="http://hinhanhdephd.com/wp-content/uploads/2016/03/anh-naruto-10.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Naruto
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Naruto luôn là một đứa trẻ rất cô độc. Cư dân làng Lá coi cậu là hóa thân của Cửu Vĩ Hồ và đối xử với cậu như một con quái vật</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/tho-san-ti-hon-2011-2exelhzrmgt?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic9.iqiyipic.com/image/20211102/7e/60/a_100482394_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://hdviet.net/wp-content/uploads/2022/05/spl-tvhayorg-16650.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Thợ Săn Tí Hon</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Nhân vật chính Gon·Freecss lớn lên trên đảo Cá Voi, cùng dì Mito và bà cố nương tựa vào nhau. 
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/jujutsu-kaisen-2020-igc33vhvex?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20201022/51/af/a_100426783_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://www.elleman.vn/wp-content/uploads/2021/06/08/196472/review-phim-anime-jujutsu-kaisen-elle-man-1.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">JUJUTSU KAISEN</h4>
+                        <span class="main__item-desc">
+                          iêu tả: Itadori Yuuji là một học sinh trung học với tài năng thể thao bẩm sinh. Một ngày nọ, vì cứu chị gái lớp...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/re-main-2021-2ejmk1iow11?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic3.iqiyipic.com/image/20210726/db/4b/a_100465919_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://ecdn.game4v.com/g4v-content/uploads/2021/06/re-main-1-game4v-1-e1623684233848.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">RE-MAIN</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Minato Kiyomizu vào mùa đông năm lớp 9 trung học, vì gặp phải một chuyện gì đó mà không thể tiếp tục chơi bóng nước
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/takt-op-destiny-2021-phuutpy5kp?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic7.iqiyipic.com/image/20210929/23/a7/a_100477615_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://gamek.mediacdn.vn/133514250583805952/2021/10/20/tuy1-16347144756481322924663.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Takt op.Destiny</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Một câu chuyện ngắn ngủi, đẹp đẽ, kể về vận mệnh của các cô gái vật lộn cùng sức mạnh của âm nhạc trong thế giới mất âm nhạc</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/zombie-land-saga-revenge-2021-1a0dvmvut49?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic8.iqiyipic.com/image/20210403/cf/1a/a_100451888_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://ecdn.game4v.com/g4v-content/uploads/2021/01/Zombie-Land-Saga-2-game4v-1-e1609553243334.png" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Zombie Land Saga Revenge</h4>
+                        <span class="main__item-desc">
+                          "My Roommate Is A Gumiho" is a romantic
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class="row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/dai-chien-nguoi-khong-lo-mua-3-2018-2c19tvbcbux?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20201210/a3/64/a_100437949_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWS21FLrhkKrutfM6KZRTrwjCJFgMaZ7Inv2Jv3f1ki4zro_jBgOWb8pHzbiVlDqRAd0&usqp=CAU" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                         
+Đại Chiến Người Khổng Lồ Mùa 3
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Đại Chiến Người Khổng Lồ Mùa 3 (Attack On Titan Season 3) mang tới câu chuyện với một diễn biến mới trong chuỗi
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/toi-da-chuyen-sinh-thanh-slime-2019-1evx2uy80xd?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20201126/6b/b6/a_100421696_m_601_zh-CN_m2_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/s/l/slime_movie_2023-_vietnamese_poster-_art_2-_revised_1.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          Tôi Đã Chuyển Sinh Thành Slime
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Nhân viên văn phòng Satoru Mikami vô tình bị một tên cướp giết hại, lúc tỉnh lại đã thấy mình chuyển sinh vào thế giới khác lạ
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/one-piece-dao-hai-tac-1999-1bk9icvr331?lang=vi_vn"onclickclass="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20211206/f2/2e/a_100421840_m_601_en_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://i.pinimg.com/600x315/35/bd/2a/35bd2a77f80c90d1e91f0f9d2b501d0d.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          One Piece (Đảo Hải Tặc)
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: One Piece (Đảo Hải Tặc) cập nhật vietsub vào 15:00 chủ nhật hàng tuần. Gol D. Roger, vua hải tặc với khối tài sản khổng lồ đã bị xử tử,
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/vua-bong-chuyen-haikyuu-phan-4-2020-11gjb8lbv7x?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic2.iqiyipic.com/image/20201031/64/01/a_100426612_m_601_en_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://animevsb.com/wp-content/uploads/2022/07/vua-bong-chuyen-phan-4-thumb.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Vua Bóng Chuyền Haikyuu - Phần 4</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Trong vòng loại giải bóng chuyền trung học phổ thông mùa xuân quận Miyagi, câu lạc bộ bóng chuyền trung học Karasuno...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/fate-zero-2021-y16naz6369?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic0.iqiyipic.com/image/20210827/df/5f/a_100471257_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://catchtheworld.net/wp-content/uploads/2020/01/1682ce9b5db0edc8dd7a7b7e896df7c2.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">
+                          FATE Zero
+                        </h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Để giành được pháp lực có thể thực hiện kỳ tích của Chén Thánh, bảy pháp sư đã triệu hồi bảy anh linh và tiến hành...
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="https://www.iq.com/album/dem-dinh-menh-vo-han-kiem-gioi-2014-fql1olifxx?lang=vi_vn"onclick class="main__contaitent-item-link">
+                      <img
+                        src="https://pic7.iqiyipic.com/image/20220126/86/16/a_100478480_m_601_zh-CN_m1_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <img src="https://animevsb.com/wp-content/uploads/2022/07/dem-dinh-menh-vo-han-kiem-gioi-thumb.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Đêm Định Mệnh: Vô Hạn Kiếm Giới</h4>
+                        <span class="main__item-desc">
+                          Miêu tả: Chén Thánh là một bảo vật huyền thoại có thể đáp ứng mọi mong muốn của người sở hữu nó. Và buổi lễ để lấy Chén Thánh được gọi là Cuộc Chiến Chén Thánh.
+
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class=".row main__contaitent tab-pane">
+            <div class="col l-12  ">
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+
+                      <div class="main__item-body ">
+                        <img src="https://animevsb.com/wp-content/uploads/2022/07/dem-dinh-menh-vo-han-kiem-gioi-thumb.jpg" alt="" class="main__item-img">
+                         <button class="btn__img">
+                          <i class="btn__img-icon fa-solid fa-play"></i>
+                        </button>
+                        <h4 class="main__item-name">Summer Again</h4>
+                        <span class="main__item-desc">
+                          Tong Xi, a ballet dancer, is forced to return
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">
+                          KinnPorsche The Series La Forte
+                        </h4>
+                        <span class="main__item-desc">
+                          KinnPorsche The Series"
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Between Us</h4>
+                        <span class="main__item-desc">
+                          Team always has a sleeping issue before</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">L.O.R.D. Critical</h4>
+                        <span class="main__item-desc">
+                          During the 15th century B.C., the descendants</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Inheritors</h4>
+                        <span class="main__item-desc">
+                          “Inheritors” is written by Kim Eun-sook, a writer
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="#" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Our Secrets</h4>
+                        <span class="main__item-desc">
+                          "Our Secret" (2021) - A story of a talented</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">
+                          The Science of Falling in Love s
+                        </h4>
+                        <span class="main__item-desc">
+                          At the prestigious Southeast</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Backstreet Rookie</h4>
+                        <span class="main__item-desc">
+                          iQIYI original Korean drama, based on the webtoon
+                          Convenience
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Descendants of The Sun</h4>
+                        <span class="main__item-desc">
+                          Descendants of the Sun tells a love story between
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+              <div class=" row main__contaitent-list ">
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2 m-2 c-4 main__contaitent-item">
+                    <a href="" class="main__contaitent-item-link">
+                      <img
+                        src="https://pic4.iqiyipic.com/image/20230216/3e/ba/a_100528516_m_601_vi_260_360.webp"
+                        alt=""
+                        class="main__contaitent-img"
+                      />
+                      <div class="main__item-body ">
+                        <h4 class="main__item-name">Fabricated City</h4>
+                        <span class="main__item-desc">
+                          An action crime movie about a man who is framed for
+                          murder and
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+
+
+            </div>
+            
+          </div>
+
+            <div class="row header__nav-menu  ">
+              <div class="col">
+                <div class="header__menu">
+                  <div class="tab-item active">
+                    <a href="#">Phim mới</a>
+                  </div>
+                  <div class="tab-item ">
+                    <a href="#">Phim lẻ</a>
+                  </div>
+                  <div class="tab-item ">
+                    <a href="#">Phim hài</a>
+                  </div>
+                  <div class="tab-item ">
+                    <a href="#">Phim hoạt hình</a>
+                  </div>
+                  <div class="tab-item ">
+                    <a href="#">Phim kinh dị</a>
+                  </div>
+                </div>
+                
+                <div class="header__nav-ovflow">
+    
+                </div>
+                <div class="header__nav-close">
+                  <i class="header__nav-icon fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+
+            <form action="" method="POST" class="form" id="form-1">
+              <h3 class="heading">Đăng nhập</h3>
+              <p class="desc">Mời bạn đăng nhập tài khoản</p>
+              <div class="form__close">
+                <i class="from__close-icon fa-solid fa-xmark"></i>
+
+              </div>
+              <div class="spacer"></div>
+          
+              <div class="form-group">
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Khoa Ken" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rules="required|email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+              </div>
+        
+          
+              <button class="form-submit">Đăng ký</button>
+            </form>
+
+           
+
+           
+            
+           
+            
+
+        </div>
+      </div>
+
+      <!-- foooter -->
+      <footer class="footer">
+        <div class="grid">
+          <div class="row footer__content">
+            <div class="col l-2">
+              <h3 class="footer__heading">Về chúng tôi</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Webphim.vn</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Email:Phimmoi.net</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2">
+              <h3 class="footer__heading">GIỚI THIỆU</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                <a href="" class="footer-item-link">Thành lập (2018)</a>
+              </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Tuyển dụng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Đièu khoản chúng tôi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2">
+              <h3 class="footer__heading">DANH MỤC</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                <a href="" class="footer-item-link">Phim Mới</a>
+              </li>
+              </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Phim lẻ</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Quốc gia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2">
+              <h3 class="footer__heading">Theo dõi chúng tôi trên </h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                <a href="" class="footer-item-link">
+                  <i class="footer-item__icon fa-brands fa-facebook"></i>
+                  Facebook</a>
+              </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">
+                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                    instargam</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">
+                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                    Linkedin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2">
+              <h3 class="footer__heading">TẢI WEB PHIM TRÊN ỨNG DỤNG CH PLAY</h3>
+              <div class="footer__dowload">
+                <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/d91264e165ed6facc6178994d5afae79.png" alt="" class="footer__dowload-qr">
+                <div class="footer__dowload-app">
+                  <a href="" class="footer__dowload-app-link">
+                    <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/39f189e19764dab688d3850742f13718.png" alt="" class="footer__dowload-app-img">
+                  </a>
+                  <a href="" class="footer__dowload-app-link">
+                    <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f4f5426ce757aea491dce94201560583.png" alt="" class="footer__dowload-app-img">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- footer header -->
+          <div class="footer__header m-0">
+            <div class="grid wide">
+            <ul class="footer__nav">
+              <li><a href="#">Menu</a></li>
+              <li><a href="">Phim moi</a></li>
+              <li><a href="">Phim le</a></li>
+              <li><a href="">Cua toi</a></li>
+            </ul>
+            </div>
+          </div>
+          <!-- footer bootum -->
+          <div class="footer__botttom">
+            <div class="grid wide">
+              <p class="footer__text">2020 Bản quyền thuộc về công ty Khoa</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  <script src="./Validator.js">
+    // navbaar
+
+//     const $ = document.querySelector.bind(document)
+//     const $$ = document.querySelectorAll.bind(document)
+
+
+//     const show = $('.header__nav-menu')
+//     const navBar = $('#header__navbar')
+//     const close = $('.header__nav-close')
+//     navBar.onclick = function() {
+//       show.classList.add('open')
+//     }
+//     close.onclick = function() {
+//       show.classList.remove('open')
+//     }
+// // sumit
+// const showForm = $('.form')
+// const showBtn = $('.header__sub-btn')
+// const formClose = $('.form__close')
+
+// showBtn.onclick = function() {
+//   showForm.classList.add('show')
+// }
+
+// formClose.onclick = function() {
+//   showForm.classList.remove('show')
+//   console.log(showForm)
+// }
+
+//     // active
+//  const tabs = $$('.tab-item')
+//  const pans = $$('.tab-pane ')
+
+//  tabs.forEach(function(tab,index) {
+//    const pane = pans[index]
+
+//    tab.onclick = function() {
+
+//      $('.tab-item.active').classList.remove('active');
+//      $('.tab-pane.active').classList.remove('active');
+
+//      this.classList.add('active');
+//      pane.classList.add('active')
+     
+//    }
+//  })
+
+ Validator('#form-1')
+    </script>
+
+
+
+
+  </body>
+</html>
