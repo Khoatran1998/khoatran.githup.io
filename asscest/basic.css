@@ -1,0 +1,32 @@
+:root {
+  --white-col: #fff;
+  --text-col: #333;
+  --black-col: #000;
+  --grey-col: #757575;
+  --green-col: rgb(0, 190, 6);
+  --rgba-col: rgb(26, 28, 34);
+  --primary-color: red;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.btn {
+  border: none;
+  padding: 10px 40px;
+  font-size: 1.6rem;
+  color: var(--white-col);
+  background-color: var(--green-col);
+  border-radius: 4px;
+}
+.btn-color {
+  border: none;
+  padding: 10px 40px;
+  font-size: 1.6rem;
+  color: var(--white-col);
+  background-color: #757575;
+  border-radius: 4px;
+}
