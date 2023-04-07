@@ -440,7 +440,7 @@
 }
 .header__navbar {
   position: fixed;
-  top: 10px;
+  top: 19px;
   left: 30px;
   z-index: 3;
 }
@@ -448,7 +448,7 @@
   cursor: pointer;
 }
 .header__navbar-icon {
-  font-size: 20px;
+  font-size: 30px;
   color: var(--white-col);
 }
 .header__nav-close {
@@ -617,8 +617,8 @@
   color: #ccc;
 }
 .from__close-icon {
-  font-size: 20px;
-  color: var(--rgba-col);
+  font-size: 25px;
+
 }
 .form .heading {
   font-size: 2rem;
