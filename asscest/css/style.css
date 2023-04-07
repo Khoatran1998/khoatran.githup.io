@@ -762,7 +762,7 @@
   border-radius: 4px;
 }
 .footer__botttom:hover {
-  cursor: pointer;
+   cursor: text;
   background-color: #afa6a6;
 }
 .footer__text {
